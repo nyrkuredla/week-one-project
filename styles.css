@@ -97,3 +97,29 @@ div.title h1 {
    font-weight: lighter;
    font-size: 1.5em;
  }
+
+div.image-grid {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 10px;
+}
+
+div.image-grid > div {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+div.image-grid > div > div {
+  margin: 10px;
+}
+{
+
+}
+
+div.image-grid-row-1 img {
+  height: 300px;
+}
+
+div.image-grid-row-2 img {
+  height: 200px;
+}
