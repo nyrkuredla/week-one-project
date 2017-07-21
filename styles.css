@@ -20,7 +20,6 @@ Input Border Bottom: #968772
 Input Border Bottom (Focus): #967343 */
 
 body {
-  background-color: #F2F1E8;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -54,7 +53,7 @@ ul.nav-buttons {
 
 ul.nav-buttons li {
   list-style: none;
-  padding: 10px 65px;
+  padding: 10px 60px;
 }
 
 ul.nav-buttons > li > a {
@@ -69,3 +68,32 @@ ul.nav-buttons > li > a:hover {
 ul > li > a:visited {
   color: #968772;
 }
+
+main {
+  background-color: #F2F1E8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Merriweather, serif;
+}
+
+div.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+
+div.title h1, h2 {
+  display: inline-block;
+  margin: 3px auto;
+}
+
+div.title h1 {
+  font-weight: normal;
+  font-size: 3.0em;
+}
+ div.title h2 {
+   font-weight: lighter;
+   font-size: 1.5em;
+ }
