@@ -21,6 +21,9 @@ Input Border Bottom (Focus): #967343 */
 
 body {
   background-color: #F2F1E8;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -28,21 +31,41 @@ header {
 }
 
 nav {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 10px 10px;
 
 }
 
-div#logo {
-  
+
+img#logo {
+  max-height: 30px;
 }
 
-div.nav-buttons {
 
+ul.nav-buttons {
+  display: flex;
+  font-family: Roboto, sans-serif;
+  font-size: 0.8em;
+  margin: 0 auto;
 }
 
-ul {
-
+ul.nav-buttons li {
+  list-style: none;
+  padding: 10px 65px;
 }
 
-ul > li {
+ul.nav-buttons > li > a {
+  color: #2B2F26;
+  text-transform: uppercase;
+}
 
+ul.nav-buttons > li > a:hover {
+  color: #CD5D67;
+}
+
+ul > li > a:visited {
+  color: #968772;
 }
