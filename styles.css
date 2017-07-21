@@ -99,27 +99,67 @@ div.title h1 {
  }
 
 div.image-grid {
+  width: 100%;
+}
+
+div.row-1, div.row-2 {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   margin: 10px;
 }
 
-div.image-grid > div {
-  display: flex;
-  flex-flow: row nowrap;
-}
-
-div.image-grid > div > div {
-  margin: 10px;
-}
-{
-
-}
-
-div.image-grid-row-1 img {
+div.row-1 {
   height: 300px;
+  width: 100%;
+  margin: 10px;
 }
 
-div.image-grid-row-2 img {
+div.row-2 {
   height: 200px;
+  width: 100%;
+  margin: 10px;
+}
+
+div.row-1 img {
+  width: 200px;
+}
+
+div.row-1 p, div.row-2 p {
+  position: absolute;
+  /*margin-top: 230px;*/
+  margin-left: 0px;
+  padding: 10px;
+  background-color: #2B2F26;
+  color: #F2F1E8;
+}
+
+
+div#image-1 {
+  flex-grow: 3;
+}
+
+div#image-2 {
+  flex-grow: 1;
+}
+
+div#image-3 {
+  flex-grow: 1;
+}
+
+div#image-4 {
+  flex-grow: 1;
+}
+
+div#image-5 {
+  flex-grow: 1;
+}
+
+div#image-6 {
+  flex-grow: 2;
+}
+
+div#image-7 {
+  flex-grow: 1;
 }
