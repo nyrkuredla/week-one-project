@@ -75,6 +75,8 @@ main {
   flex-direction: column;
   justify-content: center;
   font-family: Merriweather, serif;
+  color: #131511;
+  text-decoration: none;
 }
 
 div.title {
@@ -84,19 +86,19 @@ div.title {
   padding: 25px;
 }
 
-div.title h1, h2 {
+h1 {
+  font-weight: normal;
+  font-size: 3.0em;
   display: inline-block;
   margin: 3px auto;
 }
 
-div.title h1 {
-  font-weight: normal;
-  font-size: 3.0em;
-}
- div.title h2 {
+h2 {
    font-weight: lighter;
    font-size: 1.5em;
- }
+   display: inline-block;
+   margin: 3px auto;
+}
 
 div.image-grid {
   width: 100%;
@@ -162,4 +164,13 @@ div#image-6 {
 
 div#image-7 {
   flex-grow: 1;
+}
+
+/* About page */
+
+div.about-content-1 {
+  margin: 0 auto;
+  width: 80%;
+  padding: 30px 0;
+  line-height: 1.6em;
 }
