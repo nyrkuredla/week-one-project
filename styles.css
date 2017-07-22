@@ -77,32 +77,31 @@ main {
   color: #131511;
 }
 main.home-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-decoration: none;
+
 }
 
+/*
 div.title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 25px;
 }
-
+*/
 h1 {
   font-weight: normal;
   font-size: 3.0em;
-  display: inline-block;
   margin: 3px auto;
+  width: 100%;
+  text-align: center;
 }
 
 h2 {
    font-weight: lighter;
    font-size: 1.5em;
-   display: inline-block;
    margin: 10px auto;
    width: 100%;
+   text-align: center;
 }
 
 div.image-grid {
