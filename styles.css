@@ -280,6 +280,10 @@ h1.about {
   font-size: 3.5em;
 }
 
+h2.about-h2 {
+  text-align: left;
+}
+
 img.about-image {
   width: 150px;
 }
