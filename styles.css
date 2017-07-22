@@ -87,6 +87,7 @@ main {
 
 main.home-main {
   width: 100%;
+  height: 100%;
   padding-top: 55px;
 }
 
@@ -107,8 +108,7 @@ h2 {
 }
 
 div.image-grid {
-  width: 1000px;
-  margin: 15px;
+  margin: 15px auto;
 }
 
 div.row-1 p, div.row-2 p {
@@ -124,8 +124,17 @@ div.image-grid > div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 0 auto;
-  width: 100%;
+  margin: 0 30px;
+}
+
+div.row-1 {
+  height: 250px;
+  margin: 5px 5px;
+}
+
+div.row-2 {
+  height: 150px;
+  margin: 5px 5px;
 }
 
 div.row-1 div {
@@ -139,49 +148,42 @@ div.row-2 div {
 }
 
 div#image-1 {
-  height: 100px;
   width: 100px;
   background-image: url("./images/product-1.jpg");
   flex-grow: 3;
 }
 
 div#image-2 {
-  height: 100px;
   width: 100px;
   background-image: url("./images/product-2.jpg");
   flex-grow: 1;
 }
 
 div#image-3 {
-  height: 100px;
   width: 100px;
   background-image: url("./images/product-3.jpg");
   flex-grow: 1;
 }
 
 div#image-4 {
-  height: 100px;
   width: 100px;
   background-image: url("./images/product-4.jpg");
   flex-grow: 1;
 }
 
 div#image-5 {
-  height: 100px;
   width: 100px;
   background-image: url("./images/product-5.jpg");
   flex-grow: 1;
 }
 
 div#image-6 {
-  height: 100px;
   width: 100px;
   background-image: url("./images/product-6.jpg");
   flex-grow: 2;
 }
 
 div#image-7 {
-  height: 100px;
   width: 100px;
   background-image: url("./images/product-7.jpg");
   flex-grow: 1;
@@ -370,11 +372,11 @@ tr.contrast-row {
 footer {
   background-color: black;
   color: white;
-  padding: 20px 0;
+  height: 50px;
 }
 
 footer p {
-  padding: 0 0 10px 30px;
+  padding: 15px 0 0px 30px;
 }
 
 /* Newsletter styles */
