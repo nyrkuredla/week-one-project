@@ -25,8 +25,10 @@ body {
   box-sizing: border-box;
 }
 
-header {
-
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 nav {
@@ -69,7 +71,7 @@ ul > li > a:visited {
   color: #968772;
 }
 
-main {
+div.home-main {
   background-color: #F2F1E8;
   display: flex;
   flex-direction: column;
@@ -168,9 +170,51 @@ div#image-7 {
 
 /* About page */
 
+div.about-main {
+  background-color: #F2F1E8;
+  font-family: Merriweather, serif;
+  color: #131511;
+}
+
 div.about-content-1 {
   margin: 0 auto;
-  width: 80%;
-  padding: 30px 0;
-  line-height: 1.6em;
+  width: 70%;
+  padding: 0 0;
+  line-height: 1.9em;
+}
+
+h1.about {
+  width: 100%;
+  text-align: center;
+  padding: 30px 10px;
+
+}
+
+img.about-image {
+  width: 150px;
+  margin: 0 20px 20px 0;
+}
+
+img#birdhouse {
+  float: left;
+}
+
+p.about-content {
+  margin: 10px;
+}
+
+p a {
+  color: #968772;
+}
+
+p a:hover {
+  color: #967343;
+}
+
+blockquote {
+  border-left: 1px solid grey;
+  font-style: italic;
+  color: grey;
+  margin: 0 0;
+  padding: 10px 50px;
 }
