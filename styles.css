@@ -296,7 +296,8 @@ footer p {
 
 main.newsletter-main {
   background-image: url("./images/background-2.jpg");
-  padding: 70px 0 130px 0;
+  background-size: cover;
+  padding: 80px 0 140px 0;
 }
 
 div.signup-box {
@@ -307,12 +308,36 @@ div.signup-box {
 }
 
 div.signup-banner {
-  padding: 25px;
+  padding: 25px 0 0 0;
 }
 
 div.signup-banner h2 {
   font-size: 1.5em;
 }
- div.signup-banner p {
+
+div.signup-banner p {
   font-size: 0.8em;
  }
+
+div.signup-form input.text-input {
+  width: 90%;
+  margin: 15px auto;
+  border: none;
+  border-bottom: 1px solid #968772;
+  color: #968772;
+  font-size: 1em;
+}
+
+div.signup-form input.button {
+  border: none;
+  font-size: 0.8em;
+  margin: 20px auto;
+  padding: 10px 30px;
+  background-color: #968772;
+  color: #F2F1E8;
+}
+
+div.signup-form input.button:hover {
+  background-color: #967343;
+  color: #FFFFFF;
+}
