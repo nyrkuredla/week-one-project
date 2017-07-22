@@ -22,13 +22,18 @@ Input Border Bottom (Focus): #967343 */
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .clearfix:after {
   content: "";
   display: block;
   clear: both;
+}
+
+header {
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
 }
 
 nav {
@@ -75,19 +80,16 @@ main {
   background-color: #F2F1E8;
   font-family: Merriweather, serif;
   color: #131511;
+  margin: 0;
 }
+
+/* Homepage styles */
+
 main.home-main {
-
+  width: 100%;
+  padding-top: 55px;
 }
 
-/*
-div.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 25px;
-}
-*/
 h1 {
   font-weight: normal;
   font-size: 3.0em;
@@ -105,9 +107,87 @@ h2 {
 }
 
 div.image-grid {
+  width: 1000px;
+  margin: 15px;
+}
+
+div.row-1 p, div.row-2 p {
+  position: absolute;
+  /*margin-top: -50px;*/
+  margin-left: 0px;
+  padding: 10px;
+  background-color: #2B2F26;
+  color: #F2F1E8;
+}
+
+div.image-grid > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 auto;
   width: 100%;
 }
 
+div.row-1 div {
+  margin: 10px;
+  height: 300px;
+}
+
+div.row-2 div {
+  margin: 10px;
+  height: 250px;
+}
+
+div#image-1 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/product-1.jpg");
+  flex-grow: 3;
+}
+
+div#image-2 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/product-2.jpg");
+  flex-grow: 1;
+}
+
+div#image-3 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/product-3.jpg");
+  flex-grow: 1;
+}
+
+div#image-4 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/product-4.jpg");
+  flex-grow: 1;
+}
+
+div#image-5 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/product-5.jpg");
+  flex-grow: 1;
+}
+
+div#image-6 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/product-6.jpg");
+  flex-grow: 2;
+}
+
+div#image-7 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/product-7.jpg");
+  flex-grow: 1;
+}
+
+ /*
 div.row-1, div.row-2 {
   display: flex;
   flex-flow: row;
@@ -119,22 +199,26 @@ div.row-1, div.row-2 {
 div.row-1 {
   height: 300px;
   width: 100%;
-  margin: 10px;
+  padding: 10px;
 }
 
 div.row-2 {
   height: 200px;
   width: 100%;
-  margin: 10px;
+  padding: 10px;
 }
 
 div.row-1 img {
-  width: 200px;
+  flex-basis: 200px;
+}
+
+div.row-2 img {
+  flex-basis:
 }
 
 div.row-1 p, div.row-2 p {
   position: absolute;
-  /*margin-top: 230px;*/
+  margin-top: 230px;
   margin-left: 0px;
   padding: 10px;
   background-color: #2B2F26;
@@ -143,7 +227,8 @@ div.row-1 p, div.row-2 p {
 
 
 div#image-1 {
-  flex-grow: 3;
+  flex-basis: 33%;
+  background
 }
 
 div#image-2 {
@@ -169,6 +254,7 @@ div#image-6 {
 div#image-7 {
   flex-grow: 1;
 }
+*/
 
 /* About page */
 
