@@ -71,13 +71,15 @@ ul > li > a:visited {
   color: #968772;
 }
 
-div.home-main {
+main {
   background-color: #F2F1E8;
+  font-family: Merriweather, serif;
+  color: #131511;
+}
+main.home-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: Merriweather, serif;
-  color: #131511;
   text-decoration: none;
 }
 
@@ -171,7 +173,7 @@ div#image-7 {
 
 /* About page */
 
-div.about-main {
+main.about-main {
   background-color: #F2F1E8;
   font-family: Merriweather, serif;
   color: #131511;
@@ -258,6 +260,10 @@ div.caption-container p {
   line-height: 1.8em;
 }
 
+div.about-table-container {
+  padding-bottom: 50px;
+}
+
 table {
   border-collapse: collapse;
   border: 1px solid #968772;
@@ -279,10 +285,34 @@ tr.contrast-row {
 footer {
   background-color: black;
   color: white;
-  margin-top: 50px;
   padding: 20px 0;
 }
 
 footer p {
   padding: 0 0 10px 30px;
 }
+
+/* Newsletter styles */
+
+main.newsletter-main {
+  background-image: url("./images/background-2.jpg");
+  padding: 70px 0 130px 0;
+}
+
+div.signup-box {
+  background-color: #FFFFFF;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div.signup-banner {
+  padding: 25px;
+}
+
+div.signup-banner h2 {
+  font-size: 1.5em;
+}
+ div.signup-banner p {
+  font-size: 0.8em;
+ }
