@@ -99,7 +99,8 @@ h2 {
    font-weight: lighter;
    font-size: 1.5em;
    display: inline-block;
-   margin: 3px auto;
+   margin: 10px auto;
+   width: 100%;
 }
 
 div.image-grid {
@@ -176,7 +177,7 @@ div.about-main {
   color: #131511;
 }
 
-div.about-content-1 {
+div.about-content-1, div.about-content-2 {
   margin: 0 auto;
   width: 70%;
   padding: 0 0;
@@ -187,20 +188,22 @@ h1.about {
   width: 100%;
   text-align: center;
   padding: 30px 10px;
+  font-size: 3.5em;
 
 }
 
 img.about-image {
   width: 150px;
-  margin: 0 20px 20px 0;
 }
 
 img#birdhouse {
   float: left;
+  margin: 0 20px 20px 0;
 }
 
 p.about-content {
-  margin: 10px;
+  font-size: 1.2em;
+  font-weight: normal;
 }
 
 p a {
@@ -213,8 +216,36 @@ p a:hover {
 
 blockquote {
   border-left: 1px solid grey;
+  font-size: 1.2em;
   font-style: italic;
   color: grey;
   margin: 0 0;
-  padding: 10px 50px;
+  padding: 0px 35px;
+}
+
+div.photo-stretch {
+  background-image: url("./images/background-3.jpg");
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  margin: 20px 0;
+}
+
+div.photo-stretch p.photo-overlay {
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  padding-top: 140px;
+}
+
+p#picture-wrap {
+  width: 70%;
+  margin: 0 0;
+  display: inline-block;
+}
+
+div.caption-container {
+  float: right;
+  background-image: url("./images/background-1.jpg");
+  width: 150px;
 }
