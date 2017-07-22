@@ -177,11 +177,11 @@ div.about-main {
   color: #131511;
 }
 
-div.about-content-1, div.about-content-2 {
+div.about-content-1, div.about-content-2, div.about-table-container {
   margin: 0 auto;
   width: 70%;
   padding: 0 0;
-  line-height: 1.9em;
+  line-height: 2em;
 }
 
 h1.about {
@@ -189,7 +189,6 @@ h1.about {
   text-align: center;
   padding: 30px 10px;
   font-size: 3.5em;
-
 }
 
 img.about-image {
@@ -246,6 +245,44 @@ p#picture-wrap {
 
 div.caption-container {
   float: right;
-  background-image: url("./images/background-1.jpg");
-  width: 150px;
+  width: 250px;
+}
+
+div.caption-container img {
+  width: 100%;
+}
+
+div.caption-container p {
+  width: 100%;
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #968772;
+}
+
+tr.table-head {
+  text-align: center;
+}
+
+td {
+  border: 1px solid #968772;
+  padding: 10px 10px;
+}
+
+tr.contrast-row {
+  background-color: #BEB1A0;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+footer p {
+  padding: 0 0 10px 30px;
 }
