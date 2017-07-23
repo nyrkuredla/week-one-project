@@ -61,19 +61,20 @@ ul.nav-buttons {
 ul.nav-buttons li {
   list-style: none;
   padding: 10px 60px;
+  color: #2B2F26;
 }
 
 ul.nav-buttons > li > a {
-  color: #2B2F26;
   text-transform: uppercase;
+  /*color: #2B2F26;*/
+}
+
+ul.nav-buttons > li > a:active {
+  color: #968772;
 }
 
 ul.nav-buttons > li > a:hover {
   color: #CD5D67;
-}
-
-ul > li > a:visited {
-  color: #968772;
 }
 
 main {
@@ -111,6 +112,26 @@ div.image-grid {
   margin: 15px auto;
   display: flex;
   flex-flow: column nowrap;
+  height: 550px;
+}
+
+div.image-grid > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 10px 30px;
+}
+
+div.row-1 {
+  flex-grow: 2;
+  margin: 5px 5px;
+  height: 100px;
+}
+
+div.row-2 {
+  flex-grow: 1;
+  margin: 5px 5px;
+  height: 100px;
 }
 
 div.row-1 p, div.row-2 p {
@@ -122,29 +143,13 @@ div.row-1 p, div.row-2 p {
 }
 
 div.row-1 p {
-  margin-top: 200px;
+  margin-top: 250px;
 }
 
 div.row-2 p {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
-div.image-grid > div {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 10px 30px;
-}
-
-div.row-1 {
-  height: 250px;
-  margin: 5px 5px;
-}
-
-div.row-2 {
-  height: 150px;
-  margin: 5px 5px;
-}
 
 div.row-1 div {
   margin: 10px;
@@ -202,81 +207,13 @@ div#image-7 {
   flex-grow: 1;
 }
 
- /*
-div.row-1, div.row-2 {
-  display: flex;
-  flex-flow: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: 10px;
-}
-
-div.row-1 {
-  height: 300px;
-  width: 100%;
-  padding: 10px;
-}
-
-div.row-2 {
-  height: 200px;
-  width: 100%;
-  padding: 10px;
-}
-
-div.row-1 img {
-  flex-basis: 200px;
-}
-
-div.row-2 img {
-  flex-basis:
-}
-
-div.row-1 p, div.row-2 p {
-  position: absolute;
-  margin-top: 230px;
-  margin-left: 0px;
-  padding: 10px;
-  background-color: #2B2F26;
-  color: #F2F1E8;
-}
-
-
-div#image-1 {
-  flex-basis: 33%;
-  background
-}
-
-div#image-2 {
-  flex-grow: 1;
-}
-
-div#image-3 {
-  flex-grow: 1;
-}
-
-div#image-4 {
-  flex-grow: 1;
-}
-
-div#image-5 {
-  flex-grow: 1;
-}
-
-div#image-6 {
-  flex-grow: 2;
-}
-
-div#image-7 {
-  flex-grow: 1;
-}
-*/
-
 /* About page */
 
 main.about-main {
   background-color: #F2F1E8;
   font-family: Merriweather, serif;
   color: #131511;
+  padding-top: 50px;
 }
 
 div.about-content-1, div.about-content-2, div.about-table-container {
@@ -401,13 +338,15 @@ footer p {
 main.newsletter-main {
   background-image: url("./images/background-2.jpg");
   background-size: cover;
-  padding: 80px 0 140px 0;
+  min-height: 100vw;
 }
 
 div.signup-box {
   background-color: #FFFFFF;
+  position: absolute;
+  left: 25%;
+  top: 25%;
   width: 50%;
-  margin: 0 auto;
   text-align: center;
 }
 
