@@ -343,7 +343,7 @@ footer p {
 main.newsletter-main {
   background-image: url("./images/background-2.jpg");
   background-size: cover;
-  min-height: 100vw;
+  min-height: 100vh;
 }
 
 div.signup-box {
