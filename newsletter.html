@@ -26,12 +26,27 @@
           <p>Stay up to date with events, activities, news and specials.</p>
         </div>
         <div class="signup-form">
-          <input class="text-input" type="text" name="name" value="Name">
-          <input class="text-input" type="email" name="email" value="Email">
-          <input class="button" type="submit" value="Submit">
+          <input id="nameInput" class="text-input" type="text" name="nameInput" value="Name">
+          <input id="emailInput" class="text-input" type="email" name="emailInput" value="Email">
+          <input id="signupButton" class="button" type="submit" value="Submit">
         </div>
       </div>
     </main>
-
+    <script type="text/javascript">
+    var nameInput = document.getElementById('nameInput');
+    var emailInput = document.getElementById('emailInput');
+    var signupButton = document.getElementById('signupButton');
+    signupButton.addEventListener('click', function(e) {
+      var nameVal = nameInput.value;
+      var emailVal = emailInput.value;
+      if (nameVal && emailVal) {
+        alert('Thanks for signing up, ' + nameVal + '. Newsletters will be sent to ' + emailVal);
+        nameInput.value = "";
+        emailInput.value = "";
+      } else {
+        alert('We would love for you to sign up, please provide both your name and email address.');
+      }
+    });
+  </script>
   </body>
 </html>
