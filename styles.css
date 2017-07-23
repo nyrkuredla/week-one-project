@@ -67,6 +67,7 @@ ul.nav-buttons li {
 
 ul.nav-buttons > li > a {
   text-transform: uppercase;
+  transition: color 0.5s;
   /*color: #2B2F26;*/
 }
 
