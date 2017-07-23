@@ -267,9 +267,12 @@ blockquote {
 
 div.photo-stretch {
   background-image: url("./images/background-3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 350px;
-  background-size: cover;
   margin: 20px 0;
 }
 
